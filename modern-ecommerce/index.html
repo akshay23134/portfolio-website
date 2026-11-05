@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVAÉ — Modern Online Store</title>
+
+    <meta name="description"
+        content="NOVAÉ - Discover premium fashion, accessories, electronics and lifestyle essentials.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="site-header" id="home">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                NOVA<span>É</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+
+                <a href="#home" class="nav-link active">Home</a>
+
+                <a href="#categories" class="nav-link">
+                    Categories
+                </a>
+
+                <a href="#products" class="nav-link">
+                    Shop
+                </a>
+
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <!-- Search -->
+                <button
+                    class="icon-btn search-toggle"
+                    id="searchToggle"
+                    aria-label="Search">
+                    🔍
+                </button>
+
+                <!-- Wishlist -->
+                <button
+                    class="icon-btn wishlist-btn"
+                    id="wishlistBtn"
+                    aria-label="Wishlist">
+
+                    ♡
+
+                    <span
+                        class="count-badge"
+                        id="wishlistCount">
+                        0
+                    </span>
+
+                </button>
+
+                <!-- Cart -->
+                <button
+                    class="icon-btn cart-btn"
+                    id="cartToggle"
+                    aria-label="Shopping Cart">
+
+                    🛒
+
+                    <span
+                        class="count-badge"
+                        id="cartCount">
+                        0
+                    </span>
+
+                </button>
+
+                <!-- Mobile Menu -->
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open menu">
+
+                    ☰
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Search Box -->
+
+        <div class="search-panel" id="searchPanel">
+
+            <div class="container">
+
+                <div class="search-box">
+
+                    <span>🔍</span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search products...">
+
+                    <button
+                        id="closeSearch"
+                        aria-label="Close search">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO SECTION
+        ====================================================== -->
+
+        <section class="hero-section">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        CURATED FOR EVERYDAY
+                    </span>
+
+                    <h1>
+                        Find Your
+                        <span>Everyday</span>
+                        Essentials.
+                    </h1>
+
+                    <p>
+                        Discover thoughtfully selected products designed
+                        to make everyday living a little better.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#products"
+                            class="btn btn-primary">
+                            Shop Collection
+                            <span>→</span>
+                        </a>
+
+                        <a
+                            href="#categories"
+                            class="btn btn-outline">
+                            Explore Categories
+                        </a>
+
+                    </div>
+
+                    <div class="hero-note">
+
+                        <span>✓</span>
+                        Premium products • Easy returns • Fast delivery
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="hero-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85"
+                            alt="Modern fashion store">
+
+                    </div>
+
+                    <div class="hero-floating-card">
+
+                        <span class="floating-icon">
+                            ✦
+                        </span>
+
+                        <div>
+                            <strong>New Collection</strong>
+                            <small>Fresh styles are here</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CATEGORY SECTION
+        ====================================================== -->
+
+        <section
+            class="categories-section section-padding"
+            id="categories">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="eyebrow">
+                            EXPLORE MORE
+                        </span>
+
+                        <h2>
+                            Shop By <span>Category.</span>
+                        </h2>
+                    </div>
+
+                    <p>
+                        Find products that fit your lifestyle,
+                        from everyday essentials to statement pieces.
+                    </p>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <!-- Category 1 -->
+
+                    <article
+                        class="category-card"
+                        data-category="Fashion">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80"
+                                alt="Fashion category">
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <span>01</span>
+
+                            <h3>Fashion</h3>
+
+                            <a
+                                href="#products"
+                                class="category-link"
+                                data-filter="Fashion">
+                                Explore →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Category 2 -->
+
+                    <article
+                        class="category-card"
+                        data-category="Electronics">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?auto=format&fit=crop&w=700&q=80"
+                                alt="Electronics category">
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <span>02</span>
+
+                            <h3>Electronics</h3>
+
+                            <a
+                                href="#products"
+                                class="category-link"
+                                data-filter="Electronics">
+                                Explore →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Category 3 -->
+
+                    <article
+                        class="category-card"
+                        data-category="Accessories">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
+                                alt="Accessories category">
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <span>03</span>
+
+                            <h3>Accessories</h3>
+
+                            <a
+                                href="#products"
+                                class="category-link"
+                                data-filter="Accessories">
+                                Explore →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Category 4 -->
+
+                    <article
+                        class="category-card"
+                        data-category="Home">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=700&q=80"
+                                alt="Home and lifestyle category">
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <span>04</span>
+
+                            <h3>Home & Living</h3>
+
+                            <a
+                                href="#products"
+                                class="category-link"
+                                data-filter="Home">
+                                Explore →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Category 5 -->
+
+                    <article
+                        class="category-card"
+                        data-category="Beauty">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=80"
+                                alt="Beauty category">
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <span>05</span>
+
+                            <h3>Beauty</h3>
+
+                            <a
+                                href="#products"
+                                class="category-link"
+                                data-filter="Beauty">
+                                Explore →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Category 6 -->
+
+                    <article
+                        class="category-card"
+                        data-category="Lifestyle">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=700&q=80"
+                                alt="Lifestyle category">
+
+                        </div>
+
+                        <div class="category-content">
+
+                            <span>06</span>
+
+                            <h3>Lifestyle</h3>
+
+                            <a
+                                href="#products"
+                                class="category-link"
+                                data-filter="Lifestyle">
+                                Explore →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PRODUCTS SECTION
+        ====================================================== -->
+
+        <section
+            class="products-section section-padding"
+            id="products">
+
+            <div class="container">
+
+                <div class="section-heading products-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            OUR COLLECTION
+                        </span>
+
+                        <h2>
+                            Trending <span>Now.</span>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Everyday products chosen for quality,
+                        comfort and modern style.
+                    </p>
+
+                </div>
+
+
+                <!-- Product Controls -->
+
+                <div class="product-controls">
+
+                    <div class="filter-buttons">
+
+                        <button
+                            class="filter-btn active"
+                            data-filter="All">
+                            All
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="Fashion">
+                            Fashion
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="Electronics">
+                            Electronics
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="Accessories">
+                            Accessories
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="Home">
+                            Home
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="Beauty">
+                            Beauty
+                        </button>
+
+                    </div>
+
+
+                    <div class="sort-wrapper">
+
+                        <label for="sortSelect">
+                            Sort:
+                        </label>
+
+                        <select id="sortSelect">
+
+                            <option value="featured">
+                                Featured
+                            </option>
+
+                            <option value="low">
+                                Price: Low → High
+                            </option>
+
+                            <option value="high">
+                                Price: High → Low
+                            </option>
+
+                            <option value="rating">
+                                Highest Rated
+                            </option>
+
+                            <option value="newest">
+                                Newest
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Products Grid -->
+
+                <div
+                    class="products-grid"
+                    id="productsGrid">
+
+
+                    <!-- PRODUCT 1 -->
+
+                    <article
+                        class="product-card"
+                        data-id="1"
+                        data-category="Fashion"
+                        data-name="Classic Overshirt"
+                        data-price="1499"
+                        data-rating="4.8"
+                        data-date="6">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                NEW
+                            </span>
+
+                            <button
+                                class="wishlist-product"
+                                data-id="1"
+                                aria-label="Add to wishlist">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=700&q=80"
+                                alt="Classic Overshirt">
+
+                            <button
+                                class="quick-view-btn"
+                                data-id="1">
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                FASHION
+                            </span>
+
+                            <h3>
+                                Classic Overshirt
+                            </h3>
+
+                            <p class="product-description">
+                                Relaxed fit with a clean modern silhouette.
+                            </p>
+
+                            <div class="product-rating">
+                                ★★★★★
+                                <span>(4.8)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    ₹1,499
+                                    <del>₹1,999</del>
+                                </div>
+
+                                <button
+                                    class="add-cart-btn"
+                                    data-id="1">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 2 -->
+
+                    <article
+                        class="product-card"
+                        data-id="2"
+                        data-category="Fashion"
+                        data-name="Essential Hoodie"
+                        data-price="1799"
+                        data-rating="4.7"
+                        data-date="5">
+
+                        <div class="product-image">
+
+                            <span class="product-badge sale">
+                                -20%
+                            </span>
+
+                            <button
+                                class="wishlist-product"
+                                data-id="2"
+                                aria-label="Add to wishlist">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80"
+                                alt="Essential Hoodie">
+
+                            <button
+                                class="quick-view-btn"
+                                data-id="2">
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                FASHION
+                            </span>
+
+                            <h3>
+                                Essential Hoodie
+                            </h3>
+
+                            <p class="product-description">
+                                Soft everyday comfort with a modern fit.
+                            </p>
+
+                            <div class="product-rating">
+                                ★★★★★
+                                <span>(4.7)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    ₹1,799
+                                    <del>₹2,249</del>
+                                </div>
+
+                                <button
+                                    class="add-cart-btn"
+                                    data-id="2">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 3 -->
+
+                    <article
+                        class="product-card"
+                        data-id="3"
+                        data-category="Electronics"
+                        data-name="Wireless Headphones"
+                        data-price="2499"
+                        data-rating="4.9"
+                        data-date="4">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                BESTSELLER
+                            </span>
+
+                            <button
+                                class="wishlist-product"
+                                data-id="3"
+                                aria-label="Add to wishlist">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80"
+                                alt="Wireless Headphones">
+
+                            <button
+                                class="quick-view-btn"
+                                data-id="3">
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                ELECTRONICS
+                            </span>
+
+                            <h3>
+                                Wireless Headphones
+                            </h3>
+
+                            <p class="product-description">
+                                Immersive sound with all-day comfort.
+                            </p>
+
+                            <div class="product-rating">
+                                ★★★★★
+                                <span>(4.9)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    ₹2,499
+                                    <del>₹3,199</del>
+                                </div>
+
+                                <button
+                                    class="add-cart-btn"
+                                    data-id="3">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 4 -->
+
+                    <article
+                        class="product-card"
+                        data-id="4"
+                        data-category="Accessories"
+                        data-name="Minimal Leather Bag"
+                        data-price="2199"
+                        data-rating="4.6"
+                        data-date="3">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                NEW
+                            </span>
+
+                            <button
+                                class="wishlist-product"
+                                data-id="4"
+                                aria-label="Add to wishlist">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
+                                alt="Minimal Leather Bag">
+
+                            <button
+                                class="quick-view-btn"
+                                data-id="4">
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                ACCESSORIES
+                            </span>
+
+                            <h3>
+                                Minimal Leather Bag
+                            </h3>
+
+                            <p class="product-description">
+                                Clean design with practical everyday space.
+                            </p>
+
+                            <div class="product-rating">
+                                ★★★★★
+                                <span>(4.6)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    ₹2,199
+                                    <del>₹2,799</del>
+                                </div>
+
+                                <button
+                                    class="add-cart-btn"
+                                    data-id="4">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 5 -->
+
+                    <article
+                        class="product-card"
+                        data-id="5"
+                        data-category="Home"
+                        data-name="Ceramic Table Lamp"
+                        data-price="1299"
+                        data-rating="4.5"
+                        data-date="2">
+
+                        <div class="product-image">
+
+                            <button
+                                class="wishlist-product"
+                                data-id="5"
+                                aria-label="Add to wishlist">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=80"
+                                alt="Ceramic Table Lamp">
+
+                            <button
+                                class="quick-view-btn"
+                                data-id="5">
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                HOME
+                            </span>
+
+                            <h3>
+                                Ceramic Table Lamp
+                            </h3>
+
+                            <p class="product-description">
+                                Warm ambient lighting for modern spaces.
+                            </p>
+
+                            <div class="product-rating">
+                                ★★★★★
+                                <span>(4.5)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    ₹1,299
+                                </div>
+
+                                <button
+                                    class="add-cart-btn"
+                                    data-id="5">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 6 -->
+
+                    <article
+                        class="product-card"
+                        data-id="6"
+                        data-category="Beauty"
+                        data-name="Daily Skincare Set"
+                        data-price="1599"
+                        data-rating="4.8"
+                        data-date="1">
+
+                        <div class="product-image">
+
+                            <span class="product-badge sale">
+                                -15%
+                            </span>
+
+                            <button
+                                class="wishlist-product"
+                                data-id="6"
+                                aria-label="Add to wishlist">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=700&q=80"
+                                alt="Daily Skincare Set">
+
+                            <button
+                                class="quick-view-btn"
+                                data-id="6">
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                BEAUTY
+                            </span>
+
+                            <h3>
+                                Daily Skincare Set
+                            </h3>
+
+                            <p class="product-description">
+                                Simple essentials for your daily routine.
+                            </p>
+
+                            <div class="product-rating">
+                                ★★★★★
+                                <span>(4.8)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    ₹1,599
+                                    <del>₹1,899</del>
+                                </div>
+
+                                <button
+                                    class="add-cart-btn"
+                                    data-id="6">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 7 -->
+
+                    <article
+                        class="product-card"
+                        data-id="7"
+                        data-category="Electronics"
+                        data-name="Smart Watch"
+                        data-price="3299"
+                        data-rating="4.7"
+                        data-date="7">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                TRENDING
+                            </span>
+
+                            <button
+                                class="wishlist-product"
+                                data-id="7"
+                                aria-label="Add to wishlist">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80"
+                                alt="Smart Watch">
+
+                            <button
+                                class="quick-view-btn"
+                                data-id="7">
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                ELECTRONICS
+                            </span>
+
+                            <h3>
+                                Smart Watch
+                            </h3>
+
+                            <p class="product-description">
+                                Smart features wrapped in a clean design.
+                            </p>
+
+                            <div class="product-rating">
+                                ★★★★★
+                                <span>(4.7)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    ₹3,299
+                                    <del>₹3,999</del>
+                                </div>
+
+                                <button
+                                    class="add-cart-btn"
+                                    data-id="7">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 8 -->
+
+                    <article
+                        class="product-card"
+                        data-id="8"
+                        data-category="Accessories"
+                        data-name="Classic Sunglasses"
+                        data-price="999"
+                        data-rating="4.4"
+                        data-date="8">
+
+                        <div class="product-image">
+
+                            <button
+                                class="wishlist-product"
+                                data-id="8"
+                                aria-label="Add to wishlist">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=700&q=80"
+                                alt="Classic Sunglasses">
+
+                            <button
+                                class="quick-view-btn"
+                                data-id="8">
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                ACCESSORIES
+                            </span>
+
+                            <h3>
+                                Classic Sunglasses
+                            </h3>
+
+                            <p class="product-description">
+                                Timeless frames made for everyday style.
+                            </p>
+
+                            <div class="product-rating">
+                                ★★★★★
+                                <span>(4.4)</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    ₹999
+                                </div>
+
+                                <button
+                                    class="add-cart-btn"
+                                    data-id="8">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- No Products Message -->
+
+                <div
+                    class="no-products"
+                    id="noProducts"
+                    hidden>
+
+                    <div class="no-products-icon">
+                        🔎
+                    </div>
+
+                    <h3>
+                        No products found
+                    </h3>
+
+                    <p>
+                        Try another search or category.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SPECIAL OFFER
+        ====================================================== -->
+
+        <section class="offer-section">
+
+            <div class="container">
+
+                <div class="offer-content">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            LIMITED TIME
+                        </span>
+
+                        <h2>
+                            Better Things.
+                            <span>Better Prices.</span>
+                        </h2>
+
+                        <p>
+                            Upgrade your everyday essentials and
+                            save up to 40% on selected products.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="#products"
+                        class="btn btn-light">
+                        Shop Deals →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT / WHY US
+        ====================================================== -->
+
+        <section
+            class="about-section section-padding"
+            id="about">
+
+            <div class="container">
+
+                <div class="center-heading">
+
+                    <span class="eyebrow">
+                        WHY NOVAÉ
+                    </span>
+
+                    <h2>
+                        More Than Just
+                        <span>Shopping.</span>
+                    </h2>
+
+                    <p>
+                        Everything we offer is selected around quality,
+                        comfort and your everyday lifestyle.
+                    </p>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ✦
+                        </div>
+
+                        <h3>
+                            Premium Quality
+                        </h3>
+
+                        <p>
+                            Carefully selected products with
+                            attention to quality and detail.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ◈
+                        </div>
+
+                        <h3>
+                            Modern Design
+                        </h3>
+
+                        <p>
+                            Clean and versatile products
+                            made for today's lifestyle.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ♡
+                        </div>
+
+                        <h3>
+                            Comfort First
+                        </h3>
+
+                        <p>
+                            Products that feel as good
+                            as they look.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <h3>
+                            Easy Returns
+                        </h3>
+
+                        <p>
+                            Simple and customer-friendly
+                            return experience.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             STATISTICS
+        ====================================================== -->
+
+        <section class="stats-section">
+
+            <div class="container stats-grid">
+
+                <div class="stat-item">
+
+                    <strong
+                        class="counter"
+                        data-target="10000">
+                        0
+                    </strong>
+
+                    <span>Happy Customers</span>
+
+                </div>
+
+
+                <div class="stat-item">
+
+                    <strong
+                        class="counter"
+                        data-target="50">
+                        0
+                    </strong>
+
+                    <span>Unique Products</span>
+
+                </div>
+
+
+                <div class="stat-item">
+
+                    <strong
+                        class="counter"
+                        data-target="25">
+                        0
+                    </strong>
+
+                    <span>Cities Delivered</span>
+
+                </div>
+
+
+                <div class="stat-item">
+
+                    <strong>
+                        4.9/5
+                    </strong>
+
+                    <span>Average Rating</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CUSTOMER REVIEWS
+        ====================================================== -->
+
+        <section class="reviews-section section-padding">
+
+            <div class="container">
+
+                <div class="center-heading">
+
+                    <span class="eyebrow">
+                        CUSTOMER LOVE
+                    </span>
+
+                    <h2>
+                        Loved By People
+                        <span>Like You.</span>
+                    </h2>
+
+                    <p>
+                        Real words from people who made
+                        NOVAÉ part of their everyday style.
+                    </p>
+
+                </div>
+
+
+                <div class="reviews-grid">
+
+                    <article class="review-card">
+
+                        <div class="review-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "The quality honestly surprised me.
+                            The fit is perfect and the fabric
+                            feels really premium."
+                        </p>
+
+                        <div class="review-user">
+
+                            <div class="avatar">
+                                AS
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Arjun Sharma
+                                </strong>
+
+                                <span>
+                                    Verified Customer
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="review-card">
+
+                        <div class="review-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "I love how simple and easy the
+                            designs are to style. Definitely
+                            ordering again."
+                        </p>
+
+                        <div class="review-user">
+
+                            <div class="avatar">
+                                PR
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Priya Rao
+                                </strong>
+
+                                <span>
+                                    Verified Customer
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="review-card">
+
+                        <div class="review-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "Fast delivery, beautiful packaging
+                            and the product was exactly what
+                            I expected."
+                        </p>
+
+                        <div class="review-user">
+
+                            <div class="avatar">
+                                RK
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Rohan Kumar
+                                </strong>
+
+                                <span>
+                                    Verified Customer
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             NEWSLETTER
+        ====================================================== -->
+
+        <section class="newsletter-section">
+
+            <div class="container">
+
+                <div class="newsletter-box">
+
+                    <div class="newsletter-content">
+
+                        <span class="eyebrow">
+                            STAY IN THE LOOP
+                        </span>
+
+                        <h2>
+                            Get Something
+                            <span>Good In Your Inbox.</span>
+                        </h2>
+
+                        <p>
+                            Get updates about new arrivals,
+                            exclusive offers and more.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        class="newsletter-form"
+                        id="newsletterForm">
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="Enter your email address"
+                            required>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+                            Subscribe
+                        </button>
+
+                    </form>
+
+                    <p
+                        class="form-message"
+                        id="newsletterMessage">
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACT / CTA
+        ====================================================== -->
+
+        <section
+            class="contact-section section-padding"
+            id="contact">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <div class="contact-content">
+
+                        <span class="eyebrow">
+                            NEED HELP?
+                        </span>
+
+                        <h2>
+                            Let's Make
+                            Shopping <span>Simple.</span>
+                        </h2>
+
+                        <p>
+                            Have a question about our products,
+                            delivery or returns? Our team is
+                            here to help.
+                        </p>
+
+                        <div class="contact-details">
+
+                            <div class="contact-item">
+
+                                <span>✉</span>
+
+                                <div>
+                                    <small>Email</small>
+                                    <strong>
+                                        hello@novae.com
+                                    </strong>
+                                </div>
+
+                            </div>
+
+
+                            <div class="contact-item">
+
+                                <span>☎</span>
+
+                                <div>
+                                    <small>Phone</small>
+                                    <strong>
+                                        +91 98765 43210
+                                    </strong>
+                                </div>
+
+                            </div>
+
+
+                            <div class="contact-item">
+
+                                <span>◆</span>
+
+                                <div>
+                                    <small>Location</small>
+                                    <strong>
+                                        New Delhi, India
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-action">
+
+                        <a
+                            href="mailto:hello@novae.com"
+                            class="btn btn-light">
+                            Contact Us →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="#home"
+                        class="logo footer-logo">
+                        NOVA<span>É</span>
+                    </a>
+
+                    <p>
+                        Thoughtfully selected products
+                        for everyday living.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a
+                            href="#"
+                            aria-label="Instagram">
+                            Instagram
+                        </a>
+
+                        <a
+                            href="#"
+                            aria-label="Facebook">
+                            Facebook
+                        </a>
+
+                        <a
+                            href="#"
+                            aria-label="YouTube">
+                            YouTube
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Shop
+                    </h3>
+
+                    <a href="#products">
+                        All Products
+                    </a>
+
+                    <a href="#products">
+                        New Arrivals
+                    </a>
+
+                    <a href="#products">
+                        Best Sellers
+                    </a>
+
+                    <a href="#products">
+                        Offers
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Help
+                    </h3>
+
+                    <a href="#contact">
+                        Contact Us
+                    </a>
+
+                    <a href="#contact">
+                        Shipping
+                    </a>
+
+                    <a href="#contact">
+                        Returns
+                    </a>
+
+                    <a href="#contact">
+                        FAQ
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Categories
+                    </h3>
+
+                    <a href="#products">
+                        Fashion
+                    </a>
+
+                    <a href="#products">
+                        Electronics
+                    </a>
+
+                    <a href="#products">
+                        Accessories
+                    </a>
+
+                    <a href="#products">
+                        Home & Living
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 NOVAÉ. All Rights Reserved.
+                </p>
+
+                <div>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         CART DRAWER
+    ====================================================== -->
+
+    <div
+        class="overlay"
+        id="overlay">
+    </div>
+
+
+    <aside
+        class="cart-drawer"
+        id="cartDrawer">
+
+        <div class="drawer-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    SHOPPING
+                </span>
+
+                <h2>
+                    Your Cart
+                </h2>
+
+            </div>
+
+            <button
+                class="close-drawer"
+                id="closeCart"
+                aria-label="Close cart">
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cartItems">
+
+            <!-- JS will insert cart items here -->
+
+            <div class="empty-cart">
+
+                <div class="empty-cart-icon">
+                    🛒
+                </div>
+
+                <h3>
+                    Your cart is empty
+                </h3>
+
+                <p>
+                    Add something you love.
+                </p>
+
+                <button
+                    class="btn btn-primary"
+                    id="startShopping">
+                    Start Shopping
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-subtotal">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="cartSubtotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+            <p>
+                Shipping and taxes calculated at checkout.
+            </p>
+
+            <button
+                class="btn btn-primary checkout-btn"
+                id="checkoutBtn">
+                Proceed to Checkout →
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         QUICK VIEW MODAL
+    ====================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="quickViewModal">
+
+        <div class="quick-view-modal">
+
+            <button
+                class="modal-close"
+                id="closeQuickView"
+                aria-label="Close">
+                ×
+            </button>
+
+
+            <div
+                class="quick-view-content"
+                id="quickViewContent">
+
+                <!-- JS will insert product details -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         TOAST NOTIFICATION
+    ====================================================== -->
+
+    <div
+        class="toast"
+        id="toast">
+
+        <span class="toast-icon">
+            ✓
+        </span>
+
+        <div>
+
+            <strong id="toastTitle">
+                Added to cart
+            </strong>
+
+            <p id="toastMessage">
+                Product added successfully.
+            </p>
+
+        </div>
+
+        <button
+            id="closeToast"
+            aria-label="Close notification">
+            ×
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
